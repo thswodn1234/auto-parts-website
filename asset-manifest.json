@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/auto-parts-website/static/css/main.1a8569d9.css",
+    "main.js": "/auto-parts-website/static/js/main.d5c15f1b.js",
+    "static/js/453.c017dcf1.chunk.js": "/auto-parts-website/static/js/453.c017dcf1.chunk.js",
+    "static/media/Hero.jpg": "/auto-parts-website/static/media/Hero.c51086a116b315cfc137.jpg",
+    "index.html": "/auto-parts-website/index.html",
+    "main.1a8569d9.css.map": "/auto-parts-website/static/css/main.1a8569d9.css.map",
+    "main.d5c15f1b.js.map": "/auto-parts-website/static/js/main.d5c15f1b.js.map",
+    "453.c017dcf1.chunk.js.map": "/auto-parts-website/static/js/453.c017dcf1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1a8569d9.css",
+    "static/js/main.d5c15f1b.js"
+  ]
+}
