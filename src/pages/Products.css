@@ -1,0 +1,248 @@
+/* Products.css */
+.products-page {
+    padding: 20px;
+  }
+  
+  .product-hero {
+    background-color: #f8f8f8;
+    padding: 60px 20px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .product-hero .container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .product-hero .container p {
+    font-size: 1.1em;
+    color: #666;
+  }
+  
+  .product-filters {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .search-box {
+    display: flex;
+  }
+  
+  .search-box input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    font-size: 1em;
+  }
+  
+  .search-box .search-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-box .search-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .search-box .search-btn i {
+    margin-left: 5px;
+  }
+  
+  .category-filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .category-btn {
+    background-color: #e9ecef;
+    color: #333;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .category-btn.active,
+  .category-btn:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .product-catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .product-image {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .product-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .product-card:hover .product-image img {
+    transform: scale(1.05);
+  }
+  
+  .product-category {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+  }
+  
+  .product-name {
+    padding: 15px;
+    margin-top: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  .product-description {
+    padding: 0 15px 15px;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .product-link {
+    padding: 10px 15px;
+    background-color: #e9ecef;
+    color: #007bff;
+    text-align: right;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .product-link i {
+    margin-left: 5px;
+  }
+  
+  .product-card:hover .product-link {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .no-products {
+    text-align: center;
+    padding: 30px;
+    font-size: 1.1em;
+    color: #777;
+  }
+  
+  /* CTA 섹션 (Home.css와 동일하게 유지하거나 필요에 따라 수정) */
+  .cta-section {
+    background-color: #e9ecef;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .cta-content p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  .cta-content .button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007bff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-content .button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 반응형 디자인 */
+  @media (max-width: 768px) {
+    .product-filters {
+      flex-direction: column;
+    }
+  
+    .category-filters {
+      justify-content: flex-start;
+    }
+  
+    .product-catalog {
+      grid-template-columns: 1fr;
+    }
+  
+    .product-card {
+      flex-direction: row;
+    }
+  
+    .product-image {
+      width: 150px;
+      height: 100px;
+    }
+  
+    .product-details {
+      flex-grow: 1;
+      padding-left: 15px;
+    }
+  
+    .product-name {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+  
+    .product-description {
+      font-size: 0.9em;
+      padding-bottom: 10px;
+    }
+  
+    .product-link {
+      text-align: left;
+      padding: 10px;
+    }
+  }
